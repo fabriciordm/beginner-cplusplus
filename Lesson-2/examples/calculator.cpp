@@ -1,16 +1,26 @@
 #include <iostream>
+using namespace std;
+
+int print (int variable, int number)
+{                 
+        std::cin >> variable;     	
+}
+
 int main()
 {
-	int num1;
-	int num2; 
-	int num3;
-	int result;
-	std::cout << "Enter any 3 numbers" << std::endl << "Number 1: ";
-	std::cin >> num1;
-	std::cout << "Number 2 ";
-	std::cin >> num2;
-	std::cout << "Number 3 ";
-	std::cin >> num3;
-	result = num1 + num2 + num3;
-	std::cout << result; 
+ 
+ int num,result=0, definition;
+ 
+   std::cout<< "How many numbers do you want to add?" << std::endl ;
+   std::cin>>definition; 
+ 
+for (int i=0; i<=definition; i++)
+{
+    if (i != 0){
+    std::cout<< "Numbers " << i << " of " << definition << std::endl ;
+    std::cin>>num;
+    result+=num;
+    }   
+}	
+std::cout <<"Result:" << result; 
 }
